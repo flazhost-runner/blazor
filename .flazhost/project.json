@@ -1,11 +1,11 @@
 {
-  "name": "Blazor",
-  "language": "csharp",
+  "name": "Blazor Server",
+  "language": "dotnet",
   "install": [
     "dotnet restore"
   ],
   "migrate": [],
-  "start": "ASPNETCORE_URLS=http://localhost:5000 dotnet run",
-  "url": "http://localhost:5000",
+  "start": "ASPNETCORE_URLS=http://localhost:${APP_PORT} dotnet run",
+  "url": "http://localhost:${APP_PORT}",
   "readyPath": "/"
 }
